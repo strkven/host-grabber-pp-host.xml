@@ -497,5 +497,16 @@
 	<search-pattern><![CDATA[expreg: data-big-photo="([^"]+)"]]></search-pattern>
 	<interceptor>replace: '_\d+\.(jpg|png|gif)', '_1280.$1'</interceptor>
 </host>
-
+<host id="x">
+  <domain>
+  i.redd.it
+  </domain>
+  <path-pattern>
+  <![CDATA[.+]]>
+  </path-pattern>
+  <search-pattern>
+  <![CDATA[self]]>
+  </search-pattern>
+	
+</host>
 </root>
